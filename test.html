@@ -1,0 +1,55 @@
+<html>
+
+  <head>
+    <style>@import 'https://rsms.me/inter/inter-ui.css';*{box-sizing:border-box;border-radius:5px}:root{--theme-hue: 45;--theme-color: hsl(var(--theme-hue), 100%, 69%);--theme-color-darker: hsl(var(--theme-hue), 100%, 30%);--sub-color: #979797;--sub-color-darker: #575757;--sub-color-nearly-white: #f5f5f5;--sub-red-color: hsl(0, 69%, 59%)}body{margin:0;font-family:inter ui,sans-serif;color:var(--sub-color-darker)}header{position:fixed;top:0;left:0;right:0;padding:1em;background:#fff;display:flex;justify-content:space-between;align-items:center}header .btn{font-size:1em;margin:0 .5em}section{padding:2em}.hero,aside.loading{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}.hero h1{color:var(--theme-color);font-size:4em}h1.logo{color:var(--theme-color);display:flex;align-items:center;margin:0}h1.logo a{color:var(--theme-color);text-decoration:none;display:inline-flex}h1.logo img{height:1em;filter:hue-rotate(calc((var(--theme-hue) - 45)*1deg))}h1.logo .logo-text{margin-left:.3em}.hero h2{color:var(--sub-color);font-weight:400;font-size:2em;margin:0;margin-top:.25em}.btn{background:var(--theme-color);color:var(--theme-color-darker);padding:.75em 1em;text-decoration:none;font-size:1.2em;margin:1em;-webkit-appearance:none;border:none;cursor:pointer}.btn:hover{transform:translateY(-2px);box-shadow:0 7px 1em hsla(45,100%,30%,.1)}body.auth .hero h1{font-size:3em;margin-bottom:.25em}form label{display:flex;align-items:center;padding:1em 0}form label.explainer,form label.error{justify-content:center;color:var(--sub-color)}form label.error{color:var(--sub-red-color)}form label input,form label textarea{width:100%;color:var(--sub-color-darker)}form .btn{width:100%;margin-left:0;margin-right:0;border:2px solid transparent}form .btn:focus{outline:none;border:2px solid var(--theme-color-darker)}input[type=text],input[type=email],textarea{border:2px solid var(--sub-color);font-size:1.1em;padding:.6rem;font-family:inherit;resize:vertical}input[type=text]:focus,input[type=email]:focus,textarea:focus{outline:none;border-color:var(--sub-color-darker)}input::placeholder,textarea::placeholder{color:var(--sub-color)}input[type=range]{font-size:1.1em;margin:0}input[type=range].hue-picker{background:var(--hue-gradient);-webkit-appearance:none;height:2.5em}.char-count{text-align:right;margin-left:.55rem;margin-top:.3em;color:var(--sub-color)}.hue-picker-wrapper{display:flex}.hue-picker-preview{width:2.5em;height:2.5em;background:var(--theme-color);color:var(--theme-color-darker);font-size:1.1em;display:flex;justify-content:center;align-items:center}input[type=range]:focus{outline:none}.horizontal-container{display:flex;justify-content:center;align-items:center}body.home form label{justify-content:space-between}body.home form label input,body.home form label textarea{width:15em;margin-left:.5em}.notie-container{box-shadow:none;background:var(--theme-color);border-radius:0;color:var(--theme-color-darker)}body.profile{background:var(--sub-color-nearly-white)}body.profile header{position:static;border-radius:15px;border-top-left-radius:0;border-top-right-radius:0;margin:0 2em}body.profile header h1.logo{font-size:1.5em}aside.loading,aside.not-found{position:fixed;top:0;left:0;right:0;bottom:0;background:#fff;color:var(--theme-color-darker);opacity:1;z-index:2}aside.loading:before{content:'\01F468\0200D\01F4BB';font-size:10em;animation:emoji-loader .75s infinite linear}@keyframes emoji-loader{0%{content:'\01F468\0200D\01F4BB'}10%{content:'\01F469\0200D\01F4BB'}20%{content:'\01F468\0200D\01F3A4'}30%{content:'\01F469\0200D\01F3A4'}40%{content:'\01F525'}50%{content:'\01F918'}60%{content:'\01F680'}70%{content:'\01F6A2'}80%{content:'\01F4AA'}90%{content:'\02705'}100%{content:'\01F44C'}}aside.loading h1{color:var(--sub-color);margin:0}body.profile aside.loading{background:var(--sub-color-nearly-white)}aside.not-found{z-index:3}.profile-grid{padding:2em;display:grid;grid-template-columns:calc(50% - 1em) calc(50% - 1em);grid-gap:2em}.profile-grid section{background:#fff;padding:2em;border-radius:15px;overflow:hidden;overflow-wrap:break-word}.profile-grid section h2{margin-top:0;font-size:1.75em}.profile-grid section h3.sub{font-size:1.3em;font-weight:400;color:var(--sub-color);margin-top:-1em}.profile-grid section.main-info{display:flex;align-items:center;grid-column:1/3;background:var(--theme-color);color:var(--theme-color-darker)}.profile-grid section.main-info .profile-image{height:12em}.profile-grid section.main-info .profile-text{margin-left:2em}.profile-grid section.main-info .profile-text h1.name{font-weight:600;font-size:4em;margin:0}.profile-grid section.main-info .profile-text p.bio{font-size:1.15em;margin-top:.5em;margin-bottom:1em}.profile-grid section.main-info .profile-text p.bio>:first-child{margin-top:0}.profile-grid section.main-info .profile-text p.bio>:last-child{margin-bottom:0}.profile-grid section.main-info .profile-text p.bio a{color:inherit}.profile-grid section.main-info .profile-text .profile-links{line-height:2em;margin-top:.5em}.profile-grid section.main-info .profile-text .profile-links a{color:inherit;text-decoration:none;margin:0 .2em}.profile-grid section.main-info .profile-text .profile-links a .icon{font-size:2.5em}.profile-grid section.main-info .profile-text .profile-links a .icon.emoji{filter:brightness(.4);opacity:.65}.profile-grid section.tasks .task{margin:.75em 0;line-height:1.75em}.profile-grid section.tasks .task a{text-decoration:none;font-weight:500;color:var(--sub-color-darker);border-bottom:1px solid;border-radius:0}.profile-grid section.tasks .task .task-image{width:100%;box-shadow:0 3px 15px rgba(0,0,0,.15);margin-top:.5em}.profile-grid section.products .product,.profile-grid section.repos .repo{margin:1em 0}.profile-grid section.products .product *,.profile-grid section.repos .repo *{margin:0}.profile-grid section.products .product a,.profile-grid section.repos .repo a{text-decoration:none;color:var(--subtle-color-darker)}.profile-grid section.products .product .name,.profile-grid section.repos .repo .name{display:flex;align-items:center;font-weight:600;margin-bottom:.2em}.profile-grid section.products .product .thumbnail{height:1.5em;width:1.5em;object-fit:cover;object-position:center center;margin-right:.5em}.profile-grid section.products .product .votes,.profile-grid section.repos .repo .stars{font-size:.9rem;font-weight:400;color:var(--sub-color);margin-left:1em}.profile-grid section.products .product .tagline,.profile-grid section.repos .repo .description{font-weight:400}@media screen and (max-width:700px){header.contains-nav .logo-text{display:none}body.landing-page .hero{font-size:.7em}.horizontal-container{flex-wrap:wrap}body.landing-page .hero .horizontal-container{margin-top:2em}.horizontal-container .btn{margin:.4em;width:100%}body.landing-page .hero .horizontal-container .btn.livestream-link{order:3}body.home form label{display:block}body.home form label input,body.home form label textarea,body.home form label .hue-picker-preview{margin-top:1em}.profile-grid{grid-template-columns:100%}.profile-grid section.main-info{grid-column:1/2;flex-wrap:wrap;justify-content:center;text-align:center}.profile-grid section.main-info .profile-text{margin-left:0;margin-top:2em;max-width:100%}.profile-grid section.products{grid-row:2/3}}*{transition:all .2s}</style>
+
+    <style>
+      html, body {
+        background: #fff;
+      }
+      .wrapper {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 15%;
+      }
+      
+      .horizontal-container { margin-top: 10px; }
+
+      .hero h1 {
+        font-size: 80px;
+        color: var(--theme-color);
+        display: flex;
+        align-items: center;
+        margin: 0;
+        text-align: center;
+      }
+      a:visited, a {color: #000; }
+    </style>
+    
+    </head>
+    
+    <body>
+      <div style="position: absolute; right: 5px; bottom: 5px;font-size: 12px;">🍑 to you by <a href="http://www.thoughtfruit.ml">thoughtfruit</a></div>
+    
+      <section class="hero">
+        <h1 class="title logo">
+          👨‍💻 Rails Templates
+        </h1>
+    
+        <h2 class="subtitle">
+          save the first 10 hours on a new project
+        </h2>
+    
+        <div class="horizontal-container">
+          <a class="btn" href="#">Pick a Template</a>
+          <a class="btn" href="#">FAQ</a>
+          <a class="btn" href="#">Contact Us</a>
+          </div>
+      </section>
+    
+    
+    
+    </body>
+    
+    </html>
